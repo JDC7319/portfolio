@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portafolio de Juan David: desarrollo web, proyectos y habilidades.">
+  <title>Juan David | Desarrollador Web</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link href="./css/output.css" rel="stylesheet">
+  <script src="./js/main.js" defer></script>
+</head>
+<body class="bg-black-deep text-white antialiased">
+  <header class="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-black-deep/90 backdrop-blur-xl">
+    <div class="mx-auto flex h-20 max-w-7xl items-center justify-between px-5 sm:px-8 lg:px-12">
+      <a href="#home" class="text-2xl font-extrabold tracking-tight text-white">Juan <span class="text-indigo-400">David.</span></a>
+      <nav aria-label="Navegación principal" class="hidden items-center gap-8 md:flex">
+        <a class="text-sm font-semibold text-slate-300 transition hover:text-white" href="#home">Inicio</a>
+        <a class="text-sm font-semibold text-slate-300 transition hover:text-white" href="#about">Acerca de</a>
+        <a class="text-sm font-semibold text-slate-300 transition hover:text-white" href="#services">Servicios</a>
+        <a class="text-sm font-semibold text-slate-300 transition hover:text-white" href="#portfolio">Portafolio</a>
+        <a class="rounded-full bg-navy-electric px-5 py-2.5 text-sm font-bold text-white transition hover:bg-navy hover:ring-1 hover:ring-indigo-400" href="#contact">Contacto</a>
+      </nav>
+      <button id="menu-button" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Abrir menú" class="flex h-11 w-11 items-center justify-center rounded-lg border border-white/15 text-white md:hidden"><i id="menu-icon" class="bx bx-menu text-3xl"></i></button>
+    </div>
+    <nav id="mobile-nav" aria-label="Navegación móvil" class="hidden border-t border-white/10 bg-prussian-blue px-5 py-4 md:hidden">
+      <div class="flex flex-col gap-1">
+        <a class="rounded-lg px-3 py-3 hover:bg-white/10" href="#home">Inicio</a>
+        <a class="rounded-lg px-3 py-3 hover:bg-white/10" href="#about">Acerca de</a>
+        <a class="rounded-lg px-3 py-3 hover:bg-white/10" href="#services">Servicios</a>
+        <a class="rounded-lg px-3 py-3 hover:bg-white/10" href="#portfolio">Portafolio</a>
+        <a class="rounded-lg px-3 py-3 hover:bg-white/10" href="#contact">Contacto</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="relative flex min-h-screen scroll-mt-20 items-center overflow-hidden pt-28 pb-20">
+      <div class="pointer-events-none absolute -top-24 right-[-14rem] h-[34rem] w-[34rem] rounded-full bg-navy-electric/25 blur-[125px]"></div>
+      <div class="pointer-events-none absolute bottom-[-10rem] left-[-12rem] h-[27rem] w-[27rem] rounded-full bg-deep-twilight/80 blur-[110px]"></div>
+      <div class="relative mx-auto grid w-full max-w-7xl items-center gap-14 px-5 sm:px-8 lg:grid-cols-2 lg:px-12">
+        <div>
+          <p class="mb-6 inline-flex items-center gap-2 rounded-full border border-indigo-400/30 bg-indigo-400/10 px-4 py-2 text-xs font-bold tracking-[0.18em] text-indigo-200 uppercase"><span class="h-2 w-2 rounded-full bg-indigo-400"></span> Desarrollador web en formación</p>
+          <h1 class="text-5xl leading-[1.1] font-extrabold tracking-tight sm:text-6xl xl:text-7xl">Hola, soy <span class="bg-gradient-to-r from-indigo-300 via-violet-300 to-white bg-clip-text text-transparent">Juan David.</span></h1>
+          <h2 class="mt-5 text-xl font-semibold text-indigo-200 sm:text-2xl">Construyo experiencias digitales.</h2>
+          <p class="mt-6 max-w-xl text-base leading-8 text-slate-300 sm:text-lg">I'm Juan David, a passionate Full Stack Developer in progress, learning to build modern and efficient web applications using HTML, CSS, JavaScript, SQL, Node.js, Spring Boot, React, and Angular. Always growing, always coding.</p>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a href="#portfolio" class="rounded-full bg-navy-electric px-7 py-3.5 text-sm font-bold text-white shadow-lg shadow-navy-electric/20 transition hover:-translate-y-1 hover:bg-navy">Ver proyectos <i class="bx bx-right-arrow-alt align-middle text-lg"></i></a>
+            <a href="#contact" class="rounded-full border border-indigo-400/40 bg-white/5 px-7 py-3.5 text-sm font-bold text-white transition hover:-translate-y-1 hover:bg-white/10">Hablemos</a>
+          </div>
+          <div class="mt-9 flex flex-wrap items-center gap-3">
+            <a href="https://github.com/JDC7319" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="flex h-11 w-11 items-center justify-center rounded-full border border-white/20 text-2xl text-indigo-200 transition hover:border-indigo-400 hover:bg-navy-electric hover:text-white"><i class="bx bxl-github"></i></a>
+            <a href="https://wa.me/573213404576" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="flex h-11 w-11 items-center justify-center rounded-full border border-white/20 text-2xl text-indigo-200 transition hover:border-indigo-400 hover:bg-navy-electric hover:text-white"><i class="bx bxl-whatsapp"></i></a>
+            <a href="./resource/my-porfolio.pdf" download class="ml-2 text-sm font-semibold text-indigo-200 underline decoration-indigo-400 underline-offset-4 hover:text-white">Descargar CV <i class="bx bx-download align-middle"></i></a>
+          </div>
+        </div>
+        <div class="relative mx-auto flex w-full max-w-md items-center justify-center lg:max-w-none">
+          <div class="absolute h-72 w-72 rounded-full border border-indigo-400/25 sm:h-96 sm:w-96"></div>
+          <div class="absolute h-60 w-60 rounded-full border border-indigo-400/15 sm:h-80 sm:w-80"></div>
+          <div class="animate-float relative flex aspect-square w-64 items-center justify-center overflow-hidden rounded-[2.5rem] border border-indigo-400/30 bg-gradient-to-br from-deep-twilight via-prussian-blue to-navy p-8 shadow-2xl shadow-navy-electric/25 sm:w-80">
+            <img src="./images/photo-profile.png" alt="Retrato de Juan David" class="absolute inset-0 h-full w-full object-cover" onerror="this.style.display='none'">
+            <div class="text-center"><i class="bx bx-code-alt text-[7rem] text-indigo-300/70"></i><p class="text-lg font-bold tracking-widest text-white/75">DESARROLLO WEB</p></div>
+          </div>
+          <div class="absolute right-0 bottom-2 rounded-xl border border-white/15 bg-prussian-blue/95 px-4 py-3 shadow-xl sm:right-1"><span class="text-xs font-bold text-indigo-200">HTML · CSS · JS</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="scroll-mt-20 border-y border-white/5 bg-prussian-blue py-24 sm:py-28">
+      <div class="mx-auto grid max-w-7xl gap-14 px-5 sm:px-8 lg:grid-cols-[1.1fr_0.9fr] lg:px-12">
+        <div>
+          <p class="mb-4 text-sm font-bold tracking-[0.2em] text-indigo-300 uppercase">Conóceme</p>
+          <h2 class="text-4xl font-extrabold tracking-tight sm:text-5xl">Acerca de <span class="text-indigo-300">mí</span></h2>
+          <h3 class="mt-6 text-2xl font-bold">Soy un <span class="text-indigo-300">Front-End Developer</span></h3>
+          <p class="mt-5 max-w-2xl leading-8 text-slate-300">Hi! I'm Juan David Castañeda, a passionate and motivated Full Stack Developer in training with a strong focus on building scalable, modern, and user-friendly applications.</p>
+          <p class="mt-4 max-w-2xl leading-8 text-slate-300">Currently, I'm studying HTML, CSS, JavaScript, Java, Node.js, Spring Framework, Spring Boot, React, and Angular. My goal is to combine clean code practices, solid backend architecture, and dynamic frontend design.</p>
+          <p class="mt-4 max-w-2xl leading-8 text-slate-300">I'm always eager to learn, collaborate, and bring new ideas to life through code.</p>
+        </div>
+        <div class="rounded-3xl border border-indigo-400/20 bg-white/5 p-6 sm:p-8">
+          <h3 class="mb-6 flex items-center gap-3 text-2xl font-bold"><i class="bx bx-code-curly text-3xl text-indigo-300"></i> Skills & tecnologías</h3>
+          <div class="grid grid-cols-2 gap-3 sm:grid-cols-3">
+            <div class="flex items-center gap-2 rounded-xl border border-white/10 bg-black-deep/50 px-3 py-4"><i class="bx bxl-html5 text-2xl text-indigo-300"></i><span class="text-sm font-semibold">HTML</span></div>
+            <div class="flex items-center gap-2 rounded-xl border border-white/10 bg-black-deep/50 px-3 py-4"><i class="bx bxl-css3 text-2xl text-indigo-300"></i><span class="text-sm font-semibold">CSS</span></div>
+            <div class="flex items-center gap-2 rounded-xl border border-white/10 bg-black-deep/50 px-3 py-4"><i class="bx bxl-javascript text-2xl text-indigo-300"></i><span class="text-sm font-semibold">JavaScript</span></div>
+            <div class="flex items-center gap-2 rounded-xl border border-white/10 bg-black-deep/50 px-3 py-4"><i class="bx bxl-nodejs text-2xl text-indigo-300"></i><span class="text-sm font-semibold">Node.js</span></div>
+            <div class="flex items-center gap-2 rounded-xl border border-white/10 bg-black-deep/50 px-3 py-4"><i class="bx bxl-git text-2xl text-indigo-300"></i><span class="text-sm font-semibold">Git</span></div>
+            <div class="flex items-center gap-2 rounded-xl border border-white/10 bg-black-deep/50 px-3 py-4"><i class="bx bxl-github text-2xl text-indigo-300"></i><span class="text-sm font-semibold">GitHub</span></div>
+            <div class="flex items-center gap-2 rounded-xl border border-white/10 bg-black-deep/50 px-3 py-4"><i class="bx bxl-react text-2xl text-indigo-300"></i><span class="text-sm font-semibold">React</span></div>
+            <div class="flex items-center gap-2 rounded-xl border border-white/10 bg-black-deep/50 px-3 py-4"><i class="bx bxl-angular text-2xl text-indigo-300"></i><span class="text-sm font-semibold">Angular</span></div>
+            <div class="flex items-center gap-2 rounded-xl border border-white/10 bg-black-deep/50 px-3 py-4"><i class="bx bxl-postgresql text-2xl text-indigo-300"></i><span class="text-sm font-semibold">PostgreSQL</span></div>
+          </div>
+          <p class="mt-5 text-xs leading-5 text-slate-400">Tecnologías que estudio y practico actualmente.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="scroll-mt-20 py-24 sm:py-28">
+      <div class="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12">
+        <div class="mx-auto max-w-2xl text-center"><p class="mb-4 text-sm font-bold tracking-[0.2em] text-indigo-300 uppercase">Lo que hago</p><h2 class="text-4xl font-extrabold sm:text-5xl">Mis <span class="text-indigo-300">servicios</span></h2><p class="mt-6 leading-8 text-slate-300">Exploro distintas áreas del desarrollo para crear interfaces y experiencias digitales funcionales.</p></div>
+        <div class="mt-14 grid gap-6 md:grid-cols-3">
+          <article class="rounded-3xl border border-indigo-400/20 bg-prussian-blue p-8 transition duration-300 hover:-translate-y-2 hover:border-indigo-400/60 hover:shadow-xl hover:shadow-navy-electric/15"><div class="mb-7 flex h-16 w-16 items-center justify-center rounded-2xl bg-navy/60 text-4xl text-indigo-200"><i class="bx bx-code-alt"></i></div><h3 class="text-2xl font-bold">Desarrollo Web</h3><p class="mt-4 leading-7 text-slate-300">Diseño y construyo páginas web adaptables, con una estructura clara y una experiencia enfocada en el usuario.</p><a href="#contact" class="mt-8 inline-flex items-center gap-2 font-semibold text-indigo-200 hover:text-white">Contáctame <i class="bx bx-right-arrow-alt text-xl"></i></a></article>
+          <article class="rounded-3xl border border-indigo-400/20 bg-prussian-blue p-8 transition duration-300 hover:-translate-y-2 hover:border-indigo-400/60 hover:shadow-xl hover:shadow-navy-electric/15"><div class="mb-7 flex h-16 w-16 items-center justify-center rounded-2xl bg-navy/60 text-4xl text-indigo-200"><i class="bx bx-palette"></i></div><h3 class="text-2xl font-bold">Diseño UI/UX</h3><p class="mt-4 leading-7 text-slate-300">Creo diseños limpios y consistentes, organizando información y componentes para una navegación intuitiva.</p><a href="#contact" class="mt-8 inline-flex items-center gap-2 font-semibold text-indigo-200 hover:text-white">Contáctame <i class="bx bx-right-arrow-alt text-xl"></i></a></article>
+          <article class="rounded-3xl border border-indigo-400/20 bg-prussian-blue p-8 transition duration-300 hover:-translate-y-2 hover:border-indigo-400/60 hover:shadow-xl hover:shadow-navy-electric/15"><div class="mb-7 flex h-16 w-16 items-center justify-center rounded-2xl bg-navy/60 text-4xl text-indigo-200"><i class="bx bx-mobile-alt"></i></div><h3 class="text-2xl font-bold">Desarrollo Móvil</h3><p class="mt-4 leading-7 text-slate-300">Me interesa aprender a crear experiencias para distintos dispositivos, priorizando accesibilidad y adaptación.</p><a href="#contact" class="mt-8 inline-flex items-center gap-2 font-semibold text-indigo-200 hover:text-white">Contáctame <i class="bx bx-right-arrow-alt text-xl"></i></a></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="scroll-mt-20 border-y border-white/5 bg-prussian-blue py-24 sm:py-28">
+      <div class="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12">
+        <div class="mx-auto max-w-2xl text-center"><p class="mb-4 text-sm font-bold tracking-[0.2em] text-indigo-300 uppercase">Trabajo reciente</p><h2 class="text-4xl font-extrabold sm:text-5xl">Mi <span class="text-indigo-300">portafolio</span></h2><p class="mt-6 leading-8 text-slate-300">Un espacio para mostrar los proyectos que voy construyendo mientras mejoro mis habilidades.</p></div>
+        <div class="mt-14 grid gap-7 md:grid-cols-2 lg:grid-cols-3">
+          <article class="group overflow-hidden rounded-3xl border border-indigo-400/20 bg-black-deep/70 transition duration-300 hover:-translate-y-2 hover:border-indigo-400/60">
+            <div class="relative flex aspect-video items-center justify-center overflow-hidden bg-gradient-to-br from-navy via-deep-twilight to-black-deep"><i class="bx bx-bot text-8xl text-indigo-300/50"></i><img src="./images/portfolio1.png" alt="Vista del proyecto APEX" loading="lazy" class="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-105" onerror="this.style.display='none'"></div>
+            <div class="p-7"><div class="flex items-center justify-between gap-4"><h3 class="text-2xl font-bold">APEX</h3><a href="https://github.com/Riwi-Coders/apex-kombat" target="_blank" rel="noopener noreferrer" aria-label="Ver APEX en GitHub" class="text-3xl text-indigo-200 transition hover:text-white"><i class="bx bxl-github"></i></a></div><p class="mt-1 text-sm font-semibold text-indigo-300">Real Humanoid Combat League</p><p class="mt-4 text-sm leading-7 text-slate-300">Plataforma web de un campeonato ficticio de robots humanoides, inspirada en eventos de MMA. Permite explorar atletas, estadísticas y eventos de combate.</p><div class="mt-5 flex flex-wrap gap-2"><span class="rounded-full bg-indigo-400/10 px-3 py-1 text-xs text-indigo-200">HTML</span><span class="rounded-full bg-indigo-400/10 px-3 py-1 text-xs text-indigo-200">Tailwind</span><span class="rounded-full bg-indigo-400/10 px-3 py-1 text-xs text-indigo-200">JavaScript</span></div></div>
+          </article>
+          <article class="group overflow-hidden rounded-3xl border border-indigo-400/20 bg-black-deep/70 transition duration-300 hover:-translate-y-2 hover:border-indigo-400/60"><div class="relative flex aspect-video items-center justify-center overflow-hidden bg-gradient-to-br from-deep-twilight via-navy to-prussian-blue"><i class="bx bx-laptop text-8xl text-indigo-300/40"></i><img src="./images/portfolio2.png" alt="Imagen de segundo proyecto" loading="lazy" class="absolute inset-0 h-full w-full object-cover" onerror="this.style.display='none'"></div><div class="p-7"><h3 class="text-2xl font-bold">Próximo proyecto</h3><p class="mt-4 text-sm leading-7 text-slate-300">Espacio reservado para mostrar un nuevo proyecto de desarrollo web, su propósito y las tecnologías utilizadas.</p><span class="mt-6 inline-flex rounded-full border border-white/15 px-3 py-1 text-xs text-slate-300">En preparación</span></div></article>
+          <article class="group overflow-hidden rounded-3xl border border-indigo-400/20 bg-black-deep/70 transition duration-300 hover:-translate-y-2 hover:border-indigo-400/60"><div class="relative flex aspect-video items-center justify-center overflow-hidden bg-gradient-to-br from-navy-electric/50 via-deep-twilight to-prussian-blue"><i class="bx bx-layer text-8xl text-indigo-300/40"></i></div><div class="p-7"><h3 class="text-2xl font-bold">Próximo proyecto</h3><p class="mt-4 text-sm leading-7 text-slate-300">Aquí podrás publicar otra aplicación, práctica o proyecto colaborativo que quieras agregar al portafolio.</p><span class="mt-6 inline-flex rounded-full border border-white/15 px-3 py-1 text-xs text-slate-300">En preparación</span></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="scroll-mt-20 py-24 sm:py-28">
+      <div class="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12">
+        <div class="mx-auto max-w-2xl text-center"><p class="mb-4 text-sm font-bold tracking-[0.2em] text-indigo-300 uppercase">Colaboremos</p><h2 class="text-4xl font-extrabold sm:text-5xl">Contácta<span class="text-indigo-300">me</span></h2><p class="mt-6 leading-8 text-slate-300">¿Tienes una idea o quieres trabajar conmigo? Escríbeme y conversemos.</p></div>
+        <div class="mt-14 grid items-center gap-12 lg:grid-cols-[1.15fr_0.85fr]">
+          <form id="contact-form" data-contact-email="" class="space-y-5 rounded-3xl border border-indigo-400/25 bg-prussian-blue p-6 sm:p-9">
+            <div class="grid gap-5 sm:grid-cols-2"><label class="block text-sm font-semibold text-slate-200">Nombre completo<input name="name" required maxlength="100" autocomplete="name" placeholder="Tu nombre" class="mt-2 w-full rounded-xl border border-white/15 bg-black-deep px-4 py-3.5 text-white outline-none placeholder:text-slate-500 focus:border-indigo-400"></label><label class="block text-sm font-semibold text-slate-200">Correo electrónico<input name="email" type="email" required autocomplete="email" placeholder="correo@ejemplo.com" class="mt-2 w-full rounded-xl border border-white/15 bg-black-deep px-4 py-3.5 text-white outline-none placeholder:text-slate-500 focus:border-indigo-400"></label></div>
+            <div class="grid gap-5 sm:grid-cols-2"><label class="block text-sm font-semibold text-slate-200">Teléfono (opcional)<input name="phone" type="tel" autocomplete="tel" placeholder="Tu número" class="mt-2 w-full rounded-xl border border-white/15 bg-black-deep px-4 py-3.5 text-white outline-none placeholder:text-slate-500 focus:border-indigo-400"></label><label class="block text-sm font-semibold text-slate-200">Asunto<input name="subject" required maxlength="150" placeholder="¿En qué puedo ayudarte?" class="mt-2 w-full rounded-xl border border-white/15 bg-black-deep px-4 py-3.5 text-white outline-none placeholder:text-slate-500 focus:border-indigo-400"></label></div>
+            <label class="block text-sm font-semibold text-slate-200">Mensaje<textarea name="message" required maxlength="3000" rows="6" placeholder="Cuéntame sobre tu idea..." class="mt-2 w-full resize-y rounded-xl border border-white/15 bg-black-deep px-4 py-3.5 text-white outline-none placeholder:text-slate-500 focus:border-indigo-400"></textarea></label>
+            <button type="submit" class="w-full cursor-pointer rounded-full bg-navy-electric px-7 py-4 font-bold text-white transition hover:bg-navy sm:w-auto">Redactar mensaje <i class="bx bx-send ml-1 align-middle"></i></button>
+            <p id="form-feedback" role="status" class="text-sm text-indigo-200"></p><p class="text-xs leading-5 text-slate-400">Este formulario abre tu aplicación de correo. Configura tu dirección de contacto en el HTML para activarlo; no guarda mensajes en un servidor.</p>
+          </form>
+          <div class="relative mx-auto flex min-h-72 w-full max-w-md items-center justify-center rounded-3xl border border-indigo-400/15 bg-gradient-to-br from-deep-twilight/70 to-prussian-blue p-8 text-center"><img src="./images/img-contact.svg" alt="Ilustración de contacto" loading="lazy" class="absolute inset-0 h-full w-full object-contain p-8" onerror="this.style.display='none'"><div><i class="bx bx-envelope text-8xl text-indigo-300/35"></i><p class="mt-3 text-2xl font-bold text-white/60">Conectemos ideas</p></div></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="border-t border-white/10 bg-prussian-blue py-9"><div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-6 px-5 text-center sm:px-8 md:flex-row lg:px-12"><p class="text-sm text-slate-400">© Juan David — Casi todos los derechos reservados.</p><div class="flex items-center gap-5"><a href="https://github.com/JDC7319" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="text-2xl text-indigo-200 hover:text-white"><i class="bx bxl-github"></i></a><a href="https://wa.me/573213404576" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="text-2xl text-indigo-200 hover:text-white"><i class="bx bxl-whatsapp"></i></a><a href="#home" aria-label="Volver al inicio" class="flex h-10 w-10 items-center justify-center rounded-full border border-indigo-400/40 text-2xl text-indigo-200 transition hover:bg-navy-electric"><i class="bx bx-up-arrow-alt"></i></a></div></div></footer>
+</body>
+</html>

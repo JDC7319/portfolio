@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-black-deep: #02010a;
+  --color-prussian-blue: #04052e;
+  --color-deep-twilight: #140152;
+  --color-navy: #22007c;
+  --color-navy-electric: #0d00a4;
+  --font-sans: 'AR One Sans', sans-serif;
+}
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body { font-family: var(--font-sans); }
+  ::selection { background: #0d00a4; color: #fff; }
+}
+
+@keyframes float-image {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+@layer utilities {
+  .animate-float { animation: float-image 5s ease-in-out infinite; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}
